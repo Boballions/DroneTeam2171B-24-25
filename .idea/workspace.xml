@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e16453b-5721-4ce1-bca3-6146e96b2fe4" name="Changes" comment="this is code that almost works for the keyholes">
-      <change afterPath="$PROJECT_DIR$/src/droneScoring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DroneTeam2171B-Boballions.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DroneTeam2171B-Boballions.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/keyholesBobally.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyholesBobally.py" afterDir="false" />
     </list>
@@ -26,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "flutewizard100"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Boballions/DroneTeam2171B-24-25.git",
+    "accountId": "9c960e4e-c616-45b1-95d6-aa0629bd6a71"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -73,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736285613767</updated>
       <workItem from="1736285614599" duration="7161000" />
-      <workItem from="1736299364801" duration="4290000" />
+      <workItem from="1736299364801" duration="5893000" />
     </task>
     <task id="LOCAL-00001" summary="this is code that almost works for the keyholes">
       <option name="closed" value="true" />
@@ -91,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736292319375</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="this is code that almost works for the keyholes">
+      <option name="closed" value="true" />
+      <created>1736344931068</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736344931068</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,7 +120,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DroneTeam2171B_Boballions$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1736291748740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$droneScoring.coverage" NAME="droneScoring Coverage Results" MODIFIED="1736342870246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1736344315838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$droneScoring.coverage" NAME="droneScoring Coverage Results" MODIFIED="1736345070236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1736345944816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
