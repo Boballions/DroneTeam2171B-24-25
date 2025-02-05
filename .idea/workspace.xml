@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e16453b-5721-4ce1-bca3-6146e96b2fe4" name="Changes" comment="this is code that almost works for the keyholes">
-      <change afterPath="$PROJECT_DIR$/color_calibration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Testing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyholesBobally.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyholesBobally.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.Testing.executor": "Run",
     "Python.color_calibration.executor": "Run",
     "Python.droneScoring.executor": "Run",
     "Python.keyholesBobally.executor": "Run",
@@ -57,7 +57,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/dorin/OneDrive/Documents/GitHub/DroneTeam2171B-24-25",
+    "last_opened_file_path": "C:/Users/dorin/OneDrive/Documents/GitHub/DroneTeam2171B-24-25/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,6 +68,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dorin\OneDrive\Documents\GitHub\DroneTeam2171B-24-25\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\dorin\OneDrive\Documents\GitHub\DroneTeam2171B-24-25\src" />
     </key>
@@ -90,7 +93,9 @@
       <updated>1736285613767</updated>
       <workItem from="1736285614599" duration="7161000" />
       <workItem from="1736299364801" duration="5893000" />
-      <workItem from="1737324147038" duration="3445000" />
+      <workItem from="1737324147038" duration="4413000" />
+      <workItem from="1738367432633" duration="294000" />
+      <workItem from="1738788688148" duration="3896000" />
     </task>
     <task id="LOCAL-00001" summary="this is code that almost works for the keyholes">
       <option name="closed" value="true" />
@@ -116,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736344931068</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="this is code that almost works for the keyholes">
+      <option name="closed" value="true" />
+      <created>1737379676307</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737379676307</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,9 +151,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$Testing.coverage" NAME="Testing Coverage Results" MODIFIED="1738792585790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DroneTeam2171B_Boballions$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1736291748740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$droneScoring.coverage" NAME="droneScoring Coverage Results" MODIFIED="1737326538811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1737327494951" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$keyholesBobally.coverage" NAME="keyholesBobally Coverage Results" MODIFIED="1738367640660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/DroneTeam2171B_24_25$color_calibration.coverage" NAME="color_calibration Coverage Results" MODIFIED="1737326815818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
