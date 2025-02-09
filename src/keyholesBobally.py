@@ -9,8 +9,7 @@ for i in range(70):
     color = drone.predict_colors(color_data)
 print(color)
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 for i in range(500):
     color_data = drone.get_color_data()
     color = drone.predict_colors(color_data)
@@ -31,9 +30,7 @@ elif color == ["blue", "blue"]:
 
 
 #drone.calibrate()
-=======
-=======
->>>>>>> Stashed changes
+
 if color == ["red", "red"]:
      drone.set_drone_LED(255, 0, 0, 100)  # Red
      drone.set_controller_LED(255, 0, 0, 100)  # Red
@@ -46,10 +43,7 @@ elif color == ["blue", "blue"]:
 
 
 drone.calibrate()
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 drone.takeoff()
 height = drone.get_height()
 print(height)
@@ -78,48 +72,43 @@ while height_for_yellow + 2 < height or height < height_for_yellow - 3:
         break
 #Initializes the height for the yellow keyhole
 drone.set_throttle(50)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 drone.move(2)
 drone.set_throttle(0)
 drone.set_pitch(80)
 drone.move(2.1)
-=======
+
 drone.move(1)
 drone.set_throttle(0)
 print("Correct height, moving forward!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 #Moves forward through the yellow keyhole
 drone.set_pitch(80)
 drone.move(1.8)
->>>>>>> Stashed changes
-=======
+
 drone.move(1)
 drone.set_throttle(0)
 print("Correct height, moving forward!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 #Moves forward through the yellow keyhole
 drone.set_pitch(80)
 drone.move(1.8)
->>>>>>> Stashed changes
+
 print("I'm Forward")
 #Goes down to the green keyhole height
 drone.set_pitch(0)
 drone.set_throttle(-50)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 drone.move(0.5)
 print("I'm Down")
-=======
+
 drone.move(0.6)
->>>>>>> Stashed changes
-=======
+
 drone.move(0.6)
->>>>>>> Stashed changes
+
 print("I'm Down!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 #This moves it sideways, through the green keyhole
 drone.set_throttle(0)
 drone.set_pitch(0)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 ##drone.set_roll(60)
 drone.move(0.3)
 print("I'm Right")
@@ -139,7 +128,7 @@ drone.set_pitch(-20)
 drone.move(1)
 print("I'm landing")
 #drone.spiral(50, 5, 1)
-=======
+
 drone.set_roll(80)
 drone.move(1.05)
 print("I'm Right")
@@ -148,8 +137,7 @@ drone.set_pitch(-10)
 drone.move(0.5)
 #Lands
 print("I'm landing")
->>>>>>> Stashed changes
-=======
+
 drone.set_roll(80)
 drone.move(1.05)
 print("I'm Right")
@@ -158,5 +146,5 @@ drone.set_pitch(-10)
 drone.move(0.5)
 #Lands
 print("I'm landing")
->>>>>>> Stashed changes
+
 drone.land()
