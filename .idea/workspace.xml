@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1e16453b-5721-4ce1-bca3-6146e96b2fe4" name="Changes" comment="this is code that almost works for the keyholes">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      <change afterPath="$PROJECT_DIR$/src/Frigate_Update_2.0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Frigate_update.py" afterDir="false" />
+>>>>>>> Stashed changes
 =======
       <change afterPath="$PROJECT_DIR$/src/Frigate_Update_2.0.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Frigate_update.py" afterDir="false" />
@@ -42,6 +47,12 @@
   }
 }</component>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+>>>>>>> Stashed changes
 =======
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -62,8 +73,12 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     &quot;Python.Testing.executor&quot;: &quot;Run&quot;,
     &quot;Python.color_calibration.executor&quot;: &quot;Run&quot;,
+=======
+    &quot;Python.Frigate_update.executor&quot;: &quot;Run&quot;,
+>>>>>>> Stashed changes
 =======
     &quot;Python.Frigate_update.executor&quot;: &quot;Run&quot;,
 >>>>>>> Stashed changes
@@ -74,7 +89,11 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/Users/dorin/OneDrive/Documents/GitHub/DroneTeam2171B-24-25/src&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/robotics_blueridgebo/Documents/GitHub/DroneTeam2171B-24-25&quot;,
+>>>>>>> Stashed changes
 =======
     &quot;last_opened_file_path&quot;: &quot;C:/Users/robotics_blueridgebo/Documents/GitHub/DroneTeam2171B-24-25&quot;,
 >>>>>>> Stashed changes
@@ -87,6 +106,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,6 +140,8 @@
       <method v="2" />
     </configuration>
   </component>
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   <component name="SharedIndexes">
