@@ -36,14 +36,14 @@ def battery_check_takeoff(self):
         self.takeoff()
         print("Good Battery")
         return True
-    if self.get_battery()>70:
+    elif self.get_battery()>70:
         takeoff_yes_no = input("The battery is at " + self.get_battery + " do you want to takeoff y for yes")
         if takeoff_yes_no == "y" :
             return True
         else:
             return False
     else:
-        print("Battery Is to low to takeoff ):")
+        print("Battery Is to low to takeoff ): ):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):):")
         return False
 
 def find_color(self):
