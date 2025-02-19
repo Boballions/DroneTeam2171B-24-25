@@ -1,48 +1,48 @@
 from codrone_edu.drone import *
 drone = Drone()
 drone.pair()
-drone.load_color_data("color_data")
-height_for_yellow = 128
-for i in range(70):
-    color_data = drone.get_color_data()
-
-    color = drone.predict_colors(color_data)
-print(color)
-
-
-for i in range(500):
-    color_data = drone.get_color_data()
-    color = drone.predict_colors(color_data)
-    print(color)
-
-print(color)
-
-if color == ["red", "red"]:
-    drone.set_drone_LED(255, 0, 0, 100)  # Red
-    drone.set_controller_LED(255, 0, 0, 100)  # Red
-elif color == ["green", "green"]:
-    drone.set_drone_LED(0, 255, 0, 100)  # Green
-    drone.set_controller_LED(0, 255, 0, 100)  # Green
-elif color == ["blue", "blue"]:
-    drone.set_drone_LED(0, 0, 255, 100)  # Blue
-    drone.set_controller_LED(0, 0, 255, 100)  # Blue
+# drone.load_color_data("color_data")
+height_for_yellow = 90
+# for i in range(70):
+#     color_data = drone.get_color_data()
+#
+#     color = drone.predict_colors(color_data)
+#     print(color)
+#
+#
+# for i in range(500):
+#     color_data = drone.get_color_data()
+#     color = drone.predict_colors(color_data)
+#     print(color)
+#
+# print(color)
+#
+# if color == ["red", "red"]:
+#     drone.set_drone_LED(255, 0, 0, 100)  # Red
+#     drone.set_controller_LED(255, 0, 0, 100)  # Red
+# elif color == ["green", "green"]:
+#     drone.set_drone_LED(0, 255, 0, 100)  # Green
+#     drone.set_controller_LED(0, 255, 0, 100)  # Green
+# elif color == ["blue", "blue"]:
+#     drone.set_drone_LED(0, 0, 255, 100)  # Blue
+#     drone.set_controller_LED(0, 0, 255, 100)  # Blue
 
 
 
 #drone.calibrate()
 
-if color == ["red", "red"]:
-     drone.set_drone_LED(255, 0, 0, 100)  # Red
-     drone.set_controller_LED(255, 0, 0, 100)  # Red
-elif color == ["green", "green"]:
-     drone.set_drone_LED(0, 255, 0, 100)  # Green
-     drone.set_controller_LED(0, 255, 0, 100)  # Green
-elif color == ["blue", "blue"]:
-     drone.set_drone_LED(0, 0, 255, 100)  # Blue
-     drone.set_controller_LED(0, 0, 255, 100)  # Blue
+# if color == ["red", "red"]:
+#      drone.set_drone_LED(255, 0, 0, 100)  # Red
+#      drone.set_controller_LED(255, 0, 0, 100)  # Red
+# elif color == ["green", "green"]:
+#      drone.set_drone_LED(0, 255, 0, 100)  # Green
+#      drone.set_controller_LED(0, 255, 0, 100)  # Green
+# elif color == ["blue", "blue"]:
+#      drone.set_drone_LED(0, 0, 255, 100)  # Blue
+#      drone.set_controller_LED(0, 0, 255, 100)  # Blue
+#
 
-
-drone.calibrate()
+# drone.calibrate()
 
 drone.takeoff()
 height = drone.get_height()
@@ -71,12 +71,11 @@ while height_for_yellow + 2 < height or height < height_for_yellow - 3:
         print("code workedasdfghjdsgfaBGFDSHEhgSAfdSghfxkjreshtewa")
         break
 #Initializes the height for the yellow keyhole
-drone.set_throttle(50)
-
-drone.move(2)
+drone.set_throttle(80)
+drone.move(1)
 drone.set_throttle(0)
 drone.set_pitch(80)
-drone.move(2.1)
+drone.move(1.7)
 
 drone.move(1)
 drone.set_throttle(0)

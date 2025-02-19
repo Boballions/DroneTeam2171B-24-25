@@ -1,31 +1,28 @@
-from codrone_edu.drone import *
-from BaseCode.py import *
-drone = Drone()
+from BaseCode import BRBDrone
+drone = BRBDrone()
 drone.pair()
-drone.takeoff()
 
 if drone.battery_check_takeoff():
-    drone.get_height(100)
-    drone.find_color()
+    drone.takeoff()
+    drone.height_correction(90)
+    # drone.find_color()
 
     #Goes through the two arches
-    for i in range(2):
-        drone.simple_move(55,0,0,0,3)
-        drone.simple_move(-55,0,0,0,1.6)
-        drone.get_height(100)
-        drone.simple_move(0,0,55,0,1.8)
-        drone.simple_move(50,0,0,0,1.2)
-        drone.simple_move(0,0,-100,0,1.2)
-        drone.simple_move(-60,0,0,0,1.75)
-        drone.simple_move(0,0,100,0,1.2)
-        drone.simple_move(-50,0,0,0,1.3)
-        drone.simple_move(0,0,-100,0,0.75)
-        drone.simple_move(31,0,0,0,1.5)
-        drone.return_home()
-        drone.get_height(100)
-    drone.get_height(70)
-    drone.simple_move(60,0,0,0,4)
-    drone.simple_move(-60,0,0,0,1)
-    drone.simple_move(60,0,0,0,1)
+    for i in range(1):
+        #Forward Under Ar
+        drone.simple_move(0,0,-100,0,0.5)
+        drone.simple_move(80,0,0,0,2.5)
+        drone.hover(2)
+        #Back TO start
+        drone.simple_move(-80,0,0,0,2.5)
+        drone.hover(2)
+        drone.simple_move(80,0,80,0,2)
+        drone.simple_move(0,0,-90,0,1.3)
+        drone.simple_move(-80,0,20,0,2)
+        drone.simple_move(0,0,-90,0,0.8)
+        drone.simple_move(80,0,20,0,2)
+        drone.simple_move(0,0,-90,0,1.3)
+        drone.simple_move(-80,0,20,0,2)
+        drone.simple_move(0,0,-90,0,0.8)
 else:
     drone.land()
