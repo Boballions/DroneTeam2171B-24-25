@@ -11,9 +11,9 @@ if drone.battery_check_takeoff():
     #
     # for i in range(100):
     #
-    #     color_data = drone.get_color_data()
+    #     color_d = drone.get_color_data()
     #
-    #     color = drone.predict_colors(color_data)
+    #     color = drone.predict_colors(color_d)
     #
     # print(color)
     #
