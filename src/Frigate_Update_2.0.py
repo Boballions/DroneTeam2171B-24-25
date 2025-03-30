@@ -3,6 +3,14 @@ from codrone_edu.drone import *
 drone = Drone()
 drone.pair()
 drone.takeoff()
+what_color = input("What color B,R,or G")
+if what_color == "B":
+    drone.set_drone_LED(0,0,225,100)
+elif what_color == "R":
+    drone.set_drone_LED(225,0,0,100)
+else :
+    drone.set_drone_LED(0, 225, 0, 100)  # Blue
+
 height = drone.get_height()
 print(height)
 height_for_figure = 100
@@ -18,7 +26,7 @@ while height_for_figure + 2 < height or height < height_for_figure - 3:
             print(height)'''
 
     while height < height_for_figure:
-        drone.set_throttle(30)
+        drone.set_throttle(35)
         drone.move(0.01)
         height = drone.get_height()
         print(height)
@@ -61,62 +69,62 @@ drone.move(3)
 drone.set_pitch(-55)
 drone.move(3)
 drone.set_pitch(55)
-drone.move(2)
+drone.move(2.05)
 height = drone.get_height()
 print(height)
 #Goes over the blue arch
 drone.set_pitch(0)
 drone.set_throttle(55)
-drone.move(1.8)
+drone.move(2)
 drone.set_pitch(50)
 drone.set_throttle(0)
 drone.move(1.2)
 #Goes under the blue arch
 drone.set_throttle(-100)
 drone.set_pitch(0)
-drone.move(1.2)
+drone.move(1.4)
 #Goes under the blue, over to the red
 drone.set_pitch(-60)
 drone.set_throttle(0)
 drone.move(1.75)
 drone.set_throttle(100)
 drone.set_pitch(0)
-drone.move(1.2)
+drone.move(1.3)
 #Completes the red
 drone.set_throttle(0)
 drone.set_pitch(-50)
 drone.move(1.3)
 drone.set_pitch(0)
 drone.set_throttle(-100)
-drone.move(0.75)
+drone.move(0.95)
 drone.set_throttle(0)
 drone.set_pitch(31)
 drone.move(1.5)
 #Starts the second figure 8
 drone.set_pitch(0)
 drone.set_throttle(55)
-drone.move(2)
+drone.move(2.2)
 drone.set_pitch(50)
 drone.set_throttle(0)
 drone.move(0.8)
 #Goes under the blue arch
 drone.set_throttle(-100)
 drone.set_pitch(0)
-drone.move(1.3)
+drone.move(1.5)
 #Goes under the blue, over to the red
 drone.set_pitch(-60)
 drone.set_throttle(0)
 drone.move(1.6)
 drone.set_throttle(100)
 drone.set_pitch(0)
-drone.move(1)
+drone.move(1.2)
 #Completes the red
 drone.set_throttle(0)
 drone.set_pitch(-50)
 drone.move(1.35)
 drone.set_pitch(0)
 drone.set_throttle(-100)
-drone.move(0.75)
+drone.move(0.95)
 drone.set_throttle(0)
 drone.set_pitch(31)
 drone.move(2)
