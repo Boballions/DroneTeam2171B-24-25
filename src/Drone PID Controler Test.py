@@ -1,0 +1,23 @@
+from BaseCode import BRBDrone
+
+drone = BRBDrone()
+drone.pair()
+# drone.PID_Setup()
+drone.battery_check_takeoff()
+drone.find_color()
+drone.PID_Setup()
+drone.PID_Move(0,0,2)
+drone.hover(0.5)
+drone.simple_move(10,0,0,0,0.5)
+drone.hover(0.5)
+drone.simple_move(-10,0,0,0,0.5)
+drone.hover(0.5)
+drone.PID_Move(2,0,1.4)
+drone.hover(0.5)
+drone.PID_Move(2,-2,0.4)
+# drone.PID_Move(2,0,0.6)
+
+# drone.height_correction(90)
+# drone.hover(1)
+# drone.PID_Move(1,0,2)
+# drone.land()
