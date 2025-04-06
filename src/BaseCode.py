@@ -44,26 +44,22 @@ class BRBDrone(Drone):
         height = self.get_height()
         print(height)
         while goal_height + 5 < height or height < goal_height - 5:
-<<<<<<< HEAD
             self.set_throttle(max(int(goal_height-height),20))
             print(goal_height-height)
             self.move(0.1)
             height = int(self.get_height())
             if -5 < goal_height-height < 5:
-=======
-            print("Getting To Height")
+                print("Getting To Height")
             while height > goal_height + 5:
                 self.set_throttle(-10)
                 self.move(0.01)
                 height = self.get_height()
-
             while height < goal_height - 5:
                 self.set_throttle(10)
                 self.move(0.01)
                 height = self.get_height()
                 print(height)
             while goal_height + 5 > height > goal_height - 5:
->>>>>>> e80c35328f8b9d2466a9ea85ca0b6b6b19fb57bb
                 break
             # self.check_for_hover()
 
@@ -100,14 +96,14 @@ class BRBDrone(Drone):
         Returns:
             bool: True if takeoff is allowed and executed, False otherwise
         """
-        if self.get_battery() > 80:
+        if self.get_battery() > 95:
             self.takeoff()
             print("Good Battery")
             return True
         elif self.get_battery() > 70:
             takeoff_yes_no = input("The battery is at " + str(self.get_battery) + " do you want to takeoff y for yes")
             if takeoff_yes_no == "y":
-                return True
+                self.takeoff()
             else:
                 return False
         else:
@@ -123,7 +119,6 @@ class BRBDrone(Drone):
         LED color to match what it detects (red, green, or blue).
         Uses specific hue ranges to identify each color.
         """
-<<<<<<< HEAD
         data = []
         self.load_color_data()
         sleep(0.5)
@@ -142,19 +137,7 @@ class BRBDrone(Drone):
             print("GREEN")
         elif 180 <= hue_raw:
             self.set_drone_LED(0, 0, 255, 100)
-=======
-        hue_raw = self.get_color_data()[1]  # Senses color and checks what it is
         sleep(.1)
-        if 0 <= hue_raw < 60:
-            self.set_self_LED(255, 0, 0, 100)
-            print("RED")
-        if 60 <= hue_raw < 180:
-            self.set_self_LED(0, 255, 0, 100)
-            print("GREEN")
-        if 180 <= hue_raw:
-            self.set_self_LED(0, 0, 255, 100)
->>>>>>> e80c35328f8b9d2466a9ea85ca0b6b6b19fb57bb
-            print("BLUE")
 
     def check_for_hover(self):
         """
@@ -251,8 +234,3 @@ class BRBDrone(Drone):
             # print(round(current[0]-x,3), round(pitch,3))
             print(round(current[0] - x, 2), round(current[1] - y, 2), round((z - current[2]), 2),
                   round(roll, 3))  # Printing and graphing
-<<<<<<< HEAD
-            sleep(.01)
-=======
-            sleep(.01)
->>>>>>> e80c35328f8b9d2466a9ea85ca0b6b6b19fb57bb
