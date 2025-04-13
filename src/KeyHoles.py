@@ -2,7 +2,7 @@ from BaseCode import BRBDrone
 
 drone = BRBDrone()
 drone.pair()
-# drone.PID_Setup()
+drone.PID_Setup()
 drone.battery_check_takeoff()
 drone.find_color()
 drone.height_correction(90)
