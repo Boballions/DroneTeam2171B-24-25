@@ -20,6 +20,8 @@ drone.simple_move(9, 100, 0, 0, 0.3)
 drone.simple_move(0, -100, 0, 0, 0.3)
 drone.hover(0.5)
 # Fly to box
-drone.PID_Move(2, -2.0, 0.8)
-
+drone.PID_Move(2, -2, 1)
+while drone.get_height()>100:
+  drone.simple_move(0,20,0,0,0.2)
+drone.land()
 drone.land()
