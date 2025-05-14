@@ -21,7 +21,9 @@ drone.simple_move(0, -100, 0, 0, 0.3)
 drone.hover(0.5)
 # Fly to box
 drone.PID_Move(2, -2, 1)
-while drone.get_height()>100:
+timeout = 0
+while drone.get_height()>100 or timeout == 100000:
   drone.simple_move(0,20,0,0,0.2)
+  timeout += 1
 drone.land()
 drone.land()
