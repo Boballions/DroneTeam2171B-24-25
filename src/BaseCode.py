@@ -150,7 +150,7 @@ class BRBDrone(Drone):
         while self.get_movement_state() != "Hover":
             sleep(0.1)
 
-    def PID_Setup(self):
+    def PID_Setup(self, ThrottleKp = 100, ThrottleKi = 1.5, ThrottleKd = 0.1, RollKp = 80, RollKi = 0.1, RollKd = 0.03, PitchKp = 80, PitchKi = 0.1, PitchKd = 0.03):
         """
         Initializes PID controllers for precision movement.
 
@@ -162,19 +162,19 @@ class BRBDrone(Drone):
         t = 0
         yfinal = 1.98
 
-        self.pidThrottle = PID(100, 1.5, 0.1, setpoint=1, output_limits=(-100, 100))  # throttle (up and down) pid
+        self.pidThrottle = PID(ThrottleKp, ThrottleKi, ThrottleKd, setpoint=1, output_limits=(-100, 100))  # throttle (up and down) pid
         self.pidThrottle.time_fn = monotonic
         self.pidThrottle.sample_time = 0.01
 
-        self.pidRoll = PID(80, .1, 0.03, setpoint=1, output_limits=(-100, 100))  # roll (left and right) pid
+        self.pidRoll = PID(RollKp, RollKi, RollKd, setpoint=1, output_limits=(-100, 100))  # roll (left and right) pid
         self.pidRoll.time_fn = monotonic
         self.pidRoll.sample_time = 0.01
 
-        self.pidPitch = PID(80, .1, 0.03, setpoint=1, output_limits=(-100, 100))  # pitch (forward and back) pid
+        self.pidPitch = PID(PitchKp, PitchKi, PitchKd, setpoint=1, output_limits=(-100, 100))  # pitch (forward and back) pid
         self.pidPitch.time_fn = monotonic
         self.pidPitch.sample_time = 0.01
 
-    def PID_Move(self, x, y, z, timeout=4.5, tolerance=.15):
+    def PID_Move(self, x, y, z, timeout=4.5, tolerance=.1):
         """
         Moves the drone to specific 3D coordinates using PID control.
 
@@ -215,11 +215,11 @@ class BRBDrone(Drone):
                 self.pidThrottle.tunings = (120, .01, .01)  # NEEDS FIXED
             if dist_to_target <= tolerance:  # Checks if self is in correct position
                 centering = False
-                print(f"--- In position {x}, {y}, {z} ---")
+                # print(f"--- In position {x}, {y}, {z} ---")
                 break
             elif self.get_position_data()[0] - start_time >= timeout:  # timeout for if self can't center
                 centering = False
-                print(f"--- Centering timeout ---")
+                # print(f"--- Centering timeout ---")
                 break
 
             pitch = self.pidPitch(current[0])  # Please note pitch is x and roll is y
@@ -232,5 +232,5 @@ class BRBDrone(Drone):
             self.move(.1)  # CHANGE TIME?
 
             # print(round(current[0]-x,3), round(pitch,3))
-            print(round(current[0] - x, 2), round(current[1] - y, 2), round((z - current[2]), 2),
-                  round(roll, 3))  # Printing and graphing
+            # print(round(current[0] - x, 2), round(current[1] - y, 2), round((z - current[2]), 2),
+            #       round(roll, 3))  # Printing and graphing
