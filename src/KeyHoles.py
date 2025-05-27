@@ -5,25 +5,13 @@ drone.pair()
 drone.PID_Setup()
 drone.battery_check_takeoff()
 drone.find_color()
-drone.height_correction(90)
+drone.height_correction(128)
 drone.PID_Setup()
-#Fly to yellow hoop
-drone.simple_move(0, 0, 100, 0, 1)
-drone.PID_Move(0, 0, 2.1)
-drone.simple_move(100, 0, 0, 0, 0.3)
-drone.simple_move(-100, 0, 0, 0, 0.3)
-print("Correct Hight")
-drone.hover(0.5)
-#Fly Through Green Hoop
-drone.PID_Move(2.1 ,0, 1.6)
-drone.simple_move(9, 100, 0, 0, 0.3)
-drone.simple_move(0, -100, 0, 0, 0.3)
-drone.hover(0.5)
-# Fly to box
-drone.PID_Move(2, -2, 1)
-timeout = 0
-while drone.get_height()>100 or timeout == 100000:
-  drone.simple_move(0,20,0,0,0.2)
-  timeout += 1
-drone.land()
+drone.simple_move(0,0,50,0, 2)
+drone.simple_move(80,0,0,0,2.1)
+# drone.simple_move(80,0,0,0,3.6)
+# drone.simple_move(0,0,-50,0,1.7)
+# drone.simple_move(0,50,0,0,2)
+# drone.simple_move(-20,50,0,0,1)
+
 drone.land()
